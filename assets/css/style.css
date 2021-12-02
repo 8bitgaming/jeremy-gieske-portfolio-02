@@ -10,13 +10,32 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.header {
-    flex: 1 1 auto ;
-    background-color: var(--primarydarkbluecolor) ;
-
-
+header {
+    display: flex;
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    background-color: var(--primarydarkbluecolor);
+    justify-content: space-between;
 }
 
-.header h1 {
+header h1 {
     color: var(--lightgray);
 }
+
+header nav a {
+    text-decoration: none;
+    color: var(--lightgray);
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px 7px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
