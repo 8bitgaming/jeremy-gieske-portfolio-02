@@ -1,0 +1,22 @@
+:root {
+--primarydarkbluecolor: rgba(39, 76, 119, 1);
+--secondarylightbluecolor: rgba(96, 150, 186, 1);
+--tertiarylightestblue: rgba(163, 206, 241, 1);
+--darkbackground: rgba(139, 140, 137, 1);
+--lightgray: rgba(231, 236, 239, 1);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    flex: 1 1 auto ;
+    background-color: var(--primarydarkbluecolor) ;
+
+
+}
+
+.header h1 {
+    color: var(--lightgray);
+}
