@@ -37,6 +37,8 @@ header {
 
 header h1 {
     color: var(--lightgray);
+    align-items: flex-end;
+    padding-left: 10px;
 }
 
 header nav a {
@@ -82,42 +84,66 @@ font-size: 1.5vw;
   margin-right: 30px;
   border-right: 3px solid var(--primarydarkbluecolor);
   padding-right: 10px;
+  margin: 10px 10px;
+  flex: 0 0;
   }
 
-
+/* about me */
 .about-me {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
+
+/* .about-me-header {
+width: 25%;
+text-align: end;
+
+} */
 
 .about-me-text{
-
+  width: 100%
 }
 
-.work {
+.work-container {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
-
-.showcase {
+.work-examples {
   display: flex;
   width: 100%;
-  }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+}
 
-
-.example {
+.primary-work-example {
   background-color: red;
-  flex-grow: 4;
-  min-height: 500px;
-}  
+  width: 100%;
+  margin: 10px;
+  min-height: 400px;
+}
+
+.work-example {
+  width: 45%;
+  background-color: purple;
+  margin: 10px;
+  min-height: 200px;
+  min-width: 250px;
+}
+
+/* about me end */
+
 
   /* end body */
 
   /* footer/contact info */
 
   .footer {
-    background-image: url(../images/pattern.svg);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   /* end footer/contact info */
