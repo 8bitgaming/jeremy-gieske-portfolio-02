@@ -151,6 +151,15 @@ color: var(--primarydarkbluecolor);
   flex-wrap: wrap;
 }
 
+.work-example {
+  margin: 10px;
+  min-height: 200px;
+  border: 5px solid var(--tertiarylightestblue);
+  background-size: cover;
+  background-position: top left;
+  position: relative; 
+}
+
 .primary-work-example {
   flex: 1 1 80%;
   height: 400px;
@@ -175,15 +184,8 @@ color: var(--primarydarkbluecolor);
 .fifth-work-example {
   flex: 1 0 300px;
   background-image: url('../images/Puppy.PNG');
-}
-
-.work-example {
-  margin: 10px;
-  min-height: 200px;
-  border: 5px solid var(--tertiarylightestblue);
   background-size: cover;
-  background-position: top left;
-  position: relative; 
+  background-position: 80%;
 }
 
 .work-example:hover {
