@@ -178,12 +178,12 @@ color: var(--primarydarkbluecolor);
 
 .fourth-work-example {
   flex: 1 0 300px;
-  background-image: url('../images/weatherApp.PNG');
+  background-image: url('../images/Puppy.PNG');
 }
 
 .fifth-work-example {
   flex: 1 0 300px;
-  background-image: url('../images/Puppy.PNG');
+  background-image: url('../images/weatherApp.PNG');
 }
 
 .work-example:hover {
@@ -271,28 +271,41 @@ color: var(--primarydarkbluecolor);
       border-right: 0;
       padding: 0;
       margin: 10px 10px;
-      width: 100%;
+      width: 80%;
       text-align: center;
+      justify-content: center;
       }
 
-      .about-me {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
+    .about-me {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
-      .work-examples {
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-      }
+    .work-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
-      .primary-work-example {
-        background-position: center;
-      }
+    .work-examples {
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-      .contact-me-text {
-        width: 100%;
-      }
+    .primary-work-example {
+      background-position: center;
+    }
+
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .contact-me-text {
+      width: 100%;
+    }
   }
