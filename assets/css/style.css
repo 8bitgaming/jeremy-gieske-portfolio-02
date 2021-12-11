@@ -12,17 +12,27 @@
 }
 
 h1 {
-  font-size:calc(26px + 1.5vw);
+  font-size:calc(24px + 1.5vw);
   color: var(--primarydarkbluecolor);
+  font-weight: 800;
+  
 }
 
 h2 {
   font-size: 20px + 1.5vw;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 16px + 1.5vw;
   color: var(--darkbackground);
+  font-weight: 600;
+}
+
+p {
+  font-size:calc(12px + .4vw);
+  color: var(--secondarylightbluecolor);
+  font-weight: 400;
 }
 
 body {
@@ -30,15 +40,11 @@ body {
   padding: 0;
   }
 
-p {
-  font-size:calc(12px + .4vw);
-  color: var(--secondarylightbluecolor);
-}
-
 /* end generic font settings */
 
 header {
     display: flex;
+    width: 100%;
     background-color: var(--primarydarkbluecolor);
     justify-content: space-between;
     align-items: center;
@@ -65,10 +71,8 @@ header nav a {
     color: var(--lightgray);
     border: 1px solid var(--lightgray);
     border-radius: 10px;
-    margin: 0 15px 0 0;
+    margin: 5px;
     padding: 3px 7px;
-    justify-content: space-between;
-    align-items: flex-end;
   }
 
   header nav a:hover {
@@ -83,9 +87,6 @@ header nav a {
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  min-height: 150px;
 }
 
 .hero h2 {
@@ -97,7 +98,6 @@ color: var(--primarydarkbluecolor);
 /* body content */
 
 .sub-header{
-  margin-right: 30px;
   border-right: 3px solid var(--primarydarkbluecolor);
   padding-right: 20px;
   margin: 35px 15px;
@@ -114,19 +114,19 @@ color: var(--primarydarkbluecolor);
 
 .about-me-content {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 30px;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .about-me-text{
   flex: 1 1 50%;
+  margin: 0 15px;
 }
 
 .about-me-img {
   min-width: 100px;
   flex: 0 1 12%;
-  margin-right: 15px;
 }
 
 .about-me-img img {
@@ -145,21 +145,20 @@ color: var(--primarydarkbluecolor);
 
 .work-examples {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-right: 30px;
-  
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .primary-work-example {
-  flex: 1 1 98%;
+  flex: 1 1 80%;
   height: 400px;
   background-image: url('../images/RunBuddy.PNG');
   background-size: cover;
   background-position: top left;
   position: relative;
-  margin-top: 35px;
+  
 }
 
 .secondary-work-example {
@@ -171,12 +170,6 @@ color: var(--primarydarkbluecolor);
   margin: 10px;
   min-height: 200px;
   border: 5px solid var(--tertiarylightestblue);
-}
-
-.work-example-link {
-  width: 100%;
-  height: 100%;
-  border: crimson solid 4px;
 }
 
 .work-example-description {
@@ -208,22 +201,78 @@ color: var(--primarydarkbluecolor);
 
   .contact-me-text {
     list-style: none;
-    font-size: 1.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 80%;
+  }
+
+  .contact-me-text a {
+    text-decoration: none;
+  }
+
+  .contact-me-text h3:hover {
+    font-weight: bold;
   }
 
   /* end footer/contact info */
 
-  /* media query small
+  /* Media query for phones and small screens */
+  @media screen and (max-width: 630px) {
 
-  header nav a {
-    margin: 0 15px 5px 0;
-  } */
+    header {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  header h1 {
+      color: var(--lightgray);
+      padding-left: 0px;
+      padding-bottom: 0;
+      margin: 10px 0 0 0;
+  }
+    header nav a {
+      margin: 0 10px 5px 0;
+    }
 
-  /* .hero {
-    justify-content: center;
-  } */
+    .hero {
+      justify-content: center;
+      min-height: 75px;
+    }
+
+    .media-small {
+      display: flex;
+      flex-direction: column;
+      }
+
+    .sub-header{
+      border-bottom: 3px solid var(--primarydarkbluecolor);
+      border-right: 0;
+      padding: 0;
+      margin: 10px 10px;
+      width: 100%;
+      text-align: center;
+      }
+
+      .about-me {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .work-examples {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .primary-work-example {
+        background-position: center;
+      }
+
+      .contact-me-text {
+        width: 100%;
+      }
+  }
