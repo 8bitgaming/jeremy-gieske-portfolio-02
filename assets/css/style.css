@@ -184,8 +184,6 @@ color: var(--primarydarkbluecolor);
 .fifth-work-example {
   flex: 1 0 300px;
   background-image: url('../images/Puppy.PNG');
-  background-size: cover;
-  background-position: 80%;
 }
 
 .work-example:hover {
