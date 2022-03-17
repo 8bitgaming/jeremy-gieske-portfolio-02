@@ -163,7 +163,7 @@ color: var(--primarydarkbluecolor);
 .primary-work-example {
   flex: 1 1 80%;
   height: 400px;
-  background-image: url('../images/RunBuddy.PNG'); 
+  background-image: url('../images/OgreQuest.PNG'); 
 }
 
 .secondary-work-example {
@@ -178,7 +178,7 @@ color: var(--primarydarkbluecolor);
 
 .fourth-work-example {
   flex: 1 0 300px;
-  background-image: url('../images/Puppy.PNG');
+  background-image: url('../images/randomTravel.PNG');
 }
 
 .fifth-work-example {
